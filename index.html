@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <article> <br> <br> <br> <br>
+            <h2>ISO 20022 | La evolución de las transacciones
+                <hr>
+                <br> <br>
+                <p>
+                    While many people in the financial services industry have
+                    heard about ISO 20022, few truly understand what it is
+                    about and what is so great about it. We at SWIFT are
+                    convinced that ISO 20022 can bring profound benefits to the
+                    financial services industry, as it improves end-to-end processing
+                    across domains and geographies that currently use vastly different standards and information
+                    formats. This book removes the
+                    mystery from ISO 20022, helps you understand why it matters,
+                    and lets you see how you can benefit from it.
+                    And we’re not the only ones. Payments systems covering all major
+                    currencies have either adopted ISO 20022 or are in the process of
+                    adopting it, and the financial community has now decided that it
+                    is time for all payments to move from SWIFT MT to ISO 20022.
+                    ISO 20022 represents a big opportunity to improve the quality of
+                    payments data end to end, which enables improved efficiency,
+                    compliance and customer experience.
+                </p>
+                <br> <br> <br>
+                <p>
+                    In this context, financial standards are definitions of everything
+                    from broad concepts to microscopic pieces of business data, and
+                    all points between. These definitions are captured in a highly structured model, which can then
+                    export those definitions to
+                    developers and users of applications, screens, messages, API calls
+                    and any other data representation that needs to speak the language of financial transactions with
+                    clarity and precision.
+                    To conduct their business, financial institutions exchange massive amounts of information with their
+                    customers and among
+                    themselves. Such exchanges only work if the sender and receiver
+                    of a message have a common understanding of how to interpret
+                    this information. This is especially true if either party wishes to
+                    rely entirely on computers to process information
+                </p>
+                <br> <br> <br>
+                <p>
+                    The syntax is the format in which the information in a message is
+                    structured. Unless the reader understands a specific syntax, it will
+                    not be possible to understand the message content. There is a lot
+                    of confusion about the difference between a standard and a syntax. The standard describes the
+                    agreement on what information is
+                    expressed, while the syntax is the format, or the ‘language’ used
+                    to express that information. It is difficult for two people to have a
+                    conversation unless they both use and understand the same language. The same is true for syntax.
+                    Globalisation and the everincreasing need for end-to-end processing increases the problem.
+                    In ISO 20022, the most widely used syntax is eXtensible Mark-up
+                    Language (XML). The use of short tag names (like <PstlAdr> to
+                        represent a postal address) is also part of the syntax.
+                        XML is one of the most popular syntaxes to encode documents
+                        (or messages) electronically on the Internet. XML allows communities to define their own
+                        identifiers (or tags) and format (or
+                        data type) for each component of a message. With XML, data is
+                        marked up by using opening and closing tags that indicate the
+                        meaning and structure of the information that is communicated.
+                        For example, <Dt>2019-09-29</Dt> is an XML representation of
+                        29 September 2019. The combination of opening and closing tags
+                        with the data is called an element.
+                </p>
+                <br> <br> <br>
+                <p>
+                    One of the key characteristics of the ISO 20022 methodology
+                    is that there is a distinct separation between the business and
+                    the way it is represented in a message, that is, the syntax. The
+                    ISO 20022 methodology starts with the creation of the business
+                    model. Put simply, this is the definition of the activity or business process, the business roles
+                    and actors involved in that activity and the business information needed in order for the activity
+                    to take place.
+                    The business information is organised into business components containing business elements. For
+                    example, when looking
+                    at the processes involved in a credit transfer, key notions such
+                    as debtor (the party that pays), creditor (the money receiver),
+                    debtor agent (the bank of the debtor), creditor agent (the bank
+                    of the creditor) and payment were identified. Each of these
+                    components has further details. Figure 1-1 shows a simplified
+                    business information model, represented in Unified Modeling
+                    Language (UML).
+                    Central is the payment itself, which is associated with the debtor
+                    agent and creditor agent, which are both financial institutions.
+                    The payment is also associated with a debtor and creditor, which
+                    are both parties (in other words, persons or organisations, financial or other), which in turn have
+                    elements such as a name and
+                    address. Additionally, these parties may be owners of an account.
+                    Behind these elements lie further details. A payment, for example, contains elements such as
+                    currency and amount, a requested
+                    execution date and settlement date, and remittance information.
+                </p>
+                <br> <br> <br>
+                <p>
+                    A logical message is a description of all the information that
+                    is needed to perform a specific business activity, independent
+                    of syntax. It is composed of message components organised in
+                    a hierarchical structure. A message component contains one or
+                    more message elements and is derived from a business component by using one, some or all of its
+                    elements. The logical message structure for the excerpt of the Customer Credit Transfer
+                    message
+                </p>
+                <br> <br> <br>
+                <p>
+                    A logical message is a description of all the information that
+                    is needed to perform a specific business activity, independent
+                    of syntax. It is composed of message components organised in
+                    a hierarchical structure. A message component contains one or
+                    more message elements and is derived from a business component by using one, some or all of its
+                    elements. The logical message structure for the excerpt of the Customer Credit Transfer
+                    message can be seen in Figure 1-2.
+                </p>
+                <br> <br> <br>
+                <p>
+                    What about MT 103s and ISO 20022 messages?
+                    For European retail payments the first migration to ISO 20022 is
+                    a fact. Financial institutions in Europe have adopted ISO 20022
+                    messages, complemented with implementation guidelines, to
+                    meet the specific Single Euro Payments Area (SEPA) community
+                    requirements. ISO 20022 is now the common standard for SEPA
+                    compliant payments and has replaced a multitude of domestic
+                    standards.
+                    As adoption progresses further, some players may find it easier to
+                    use ISO 20022 for all of their interbank payments. Furthermore,
+                    banks that have gone through an implementation in the interbank
+                    area are also starting to look at implementation in the payments
+                    initiation and reporting space. For the next few years, these banks
+                    will be able to use message translation products and services to
+                    map their ISO 20022 messages to MT 103s in order to communicate with their correspondent banks that
+                    are not (yet) using ISO
+                    20022. By the end of 2025, adoption of ISO 20022 throughout the
+                    correspondent banking domain will be complete.
+                </p>
+                <br> <br> <br>
+                <p>
+                    To continue with our language analogy, does everyone use translators to communicate with foreigners?
+                    Of course not; most people have some knowledge of other languages and sometimes one
+                    of the participants in the conversation will revert to an ‘internal’
+                    translation and switch to the language of the conversation partner. Often, both participants settle
+                    on a lingua franca (English,
+                    Swahili, Hindi), whereby both parties translate internally to and
+                    from this third language. Life is also made easier by the fact that
+                    most service providers (telecommunications, banks, governments) allow customers to work with them in
+                    the language of
+                    their choice.
+                    Financial institutions are no different. Many use their own internal formats to store information
+                    and exchange it between applications. They then map this information to whatever format is
+                    needed for the outside world. Even when these outside formats
+                    change, they often continue to use the old version internally and
+                    map it to the new format before sending it out. It’s true that the
+                    securities industry migrated from ISO 7775 to ISO 15022 in 2004,
+                    but many securities players still use ISO 7775 internally and with
+                    some of their customers. Similarly, in 2003, SWIFT replaced its
+                    workhorse MT 100 Customer Transfer with a new format, the
+                    MT 103 Single Customer Credit Transfer, but several institutions
+                    still use the MT 100 internally. Typically these institutions find it
+                    cheaper to map/transform the information to and from the new
+                    format than to change their legacy applications. For centuries,
+                    people dreamt of a common language (for example, Esperanto) to
+                    breach the communication gap. However, this dream never materialised. Standardisers shared a similar
+                    dream over 10 years ago
+                    and are now facing the same issue: multiple standards will not go
+                    away any time soon. As a consequence, coexistence is not a shortterm situation and the challenge
+                    becomes one of interoperability
+                    between different standards.
+                </p>
+
+                <p>
+                    To continue with our language analogy, does everyone use translators to communicate with foreigners?
+                    Of course not; most people have some knowledge of other languages and sometimes one
+                    of the participants in the conversation will revert to an ‘internal’
+                    translation and switch to the language of the conversation partner. Often, both participants settle
+                    on a lingua franca (English,
+                    Swahili, Hindi), whereby both parties translate internally to and
+                    from this third language. Life is also made easier by the fact that
+                    most service providers (telecommunications, banks, governments) allow customers to work with them in
+                    the language of
+                    their choice.
+                    Financial institutions are no different. Many use their own internal formats to store information
+                    and exchange it between applications. They then map this information to whatever format is
+                    needed for the outside world. Even when these outside formats
+                    change, they often continue to use the old version internally and
+                    map it to the new format before sending it out. It’s true that the
+                    securities industry migrated from ISO 7775 to ISO 15022 in 2004,
+                    but many securities players still use ISO 7775 internally and with
+                    some of their customers. Similarly, in 2003, SWIFT replaced its
+                    workhorse MT 100 Customer Transfer with a new format, the
+                    MT 103 Single Customer Credit Transfer, but several institutions
+                    still use the MT 100 internally. Typically these institutions find it
+                    cheaper to map/transform the information to and from the new
+                    format than to change their legacy applications. For centuries,
+                    people dreamt of a common language (for example, Esperanto) to
+                    breach the communication gap. However, this dream never materialised. Standardisers shared a similar
+                    dream over 10 years ago
+                    and are now facing the same issue: multiple standards will not go
+                    away any time soon. As a consequence, coexistence is not a shortterm situation and the challenge
+                    becomes one of interoperability
+                    between different standards.
+                </p>
+                <br> <br> <br>
+                <p>
+                    In June 2009, SWIFT and DTCC embarked on an initiative with
+                    XBRL US to build a corporate actions taxonomy that is fully aligned
+                    with the ISO 20022 dictionary for corporate actions elements. In
+                    this way, corporate issuers of securities can tag their corporate
+                    actions documents and create XML data that can be easily used in
+                    ISO 20022 corporate action messages for financial intermediaries
+                    downstream in the corporate actions life-cycle process.
+                    Issuers (or their agents) can ‘tag’ documents using an XBRL tagging tool and the resulting XBRL
+                    instance document can then be
+                    automatically transformed into an ISO 20022 corporate actions
+                    message for consumption by financial and other intermediaries
+                    involved downstream.
+                    This was the first collaboration of its kind across standardisation domains - XBRL in the
+                    accounting and business reporting
+                    domain, and ISO 20022 (SWIFT and DTCC) in the transaction processing domain
+                </p>
+                <br> <br> <br>
+                <p>
+                    Focused players in areas such as European retail payments or the
+                    funds industry need ISO 20022 to operate. If this is you, you have
+                    to implement ISO 20022 capabilities, so you have to install communications and interface software
+                    that is ISO 20022 aware. Players with legacy systems that use existing standards (domestic,
+                    proprietary or other) may decide not to migrate these systems to
+                    ISO 20022, but instead rely on mapping at the middleware level.
+                    Players facing new investments, however, may decide to enable
+                    their applications for ISO 20022 from the start. Examples could be
+                    transfer agents in Asia that are making investments to replace the
+                    current fax and phone communications, and new market infrastructures in securities.
+                </p>
+                <br> <br> <br>
+                <p>
+                    So you have to deal with the Tower of Babel on a daily basis: many
+                    different formats across geographies and businesses and large
+                    legacy systems that are very expensive to change. In all likelihood
+                    your institution already uses enterprise scale middleware –
+                    sometimes known as Enterprise Application Integration (EAI)
+                    software – to connect applications and communications interfaces, mapping and transforming
+                    information as needed. In
+                    a highly simplified form, your overall architecture could look
+                    similar
+                </p>
+                <br> <br> <br>
+                <p>
+                    How much will it cost? A difficult question because no two institutions are alike. However, the fact
+                    that ISO 20022 mostly uses
+                    XML syntax does help, mainly because the popularity of XML has
+                    driven commoditisation in the XML tools market, and first-class
+                    integration tools are available from many vendors and opensource projects; but also because XML
+                    skills are increasingly easy
+                    to find. The balance of implementation cost has, therefore, tilted
+                    away from technology concerns towards business analysis. From
+                    a business analysis point of view, the consistency across data
+                    element definitions enforced by the dictionary (and the separation of the semantic layer)
+                    significantly simplifies the exercise,
+                    especially as people build up ISO 20022-specific skills. With the
+                    critical mass that ISO 20022 has in the industry, the likelihood of
+                    reusing content you have seen before is indeed very high.
+                </p>
+                <br> <br> <br>
+                <p>
+                    ISO 20022 messages are designed to support current and future
+                    business needs around the world. To this end, specifications
+                    include international characters in narrative fields, long identifiers and references, large
+                    monetary amounts and precise
+                    interest and exchange rates. If you are a technical architect or
+                    a designer of back-office systems, you should take into account
+                    both the semantics of ISO 20022, which provide an internationally agreed common vocabulary for
+                    financial industry concepts,
+                    and the physical forms in which these concepts are represented.
+                    In this way, you can guarantee that systems will be aligned with
+                    ISO 20022 for messaging purposes, but also with the industry’s
+                    collective wisdom regarding the best ways to represent financial
+                    data for present and future needs
+                </p>
+                <br> <br> <br>
+                <p>
+                    ISO 20022 messages are designed to support current and future
+                    business needs around the world. To this end, specifications
+                    include international characters in narrative fields, long identifiers and references, large
+                    monetary amounts and precise
+                    interest and exchange rates. If you are a technical architect or
+                    a designer of back-office systems, you should take into account
+                    both the semantics of ISO 20022, which provide an internationally agreed common vocabulary for
+                    financial industry concepts,
+                    and the physical forms in which these concepts are represented.
+                    In this way, you can guarantee that systems will be aligned with
+                    ISO 20022 for messaging purposes, but also with the industry’s
+                    collective wisdom regarding the best ways to represent financial
+                    data for present and future needs
+                </p>
+                <br> <br> <br>
+                <p>
+                    ISO 20022 messages are designed to support current and future
+                    business needs around the world. To this end, specifications
+                    include international characters in narrative fields, long identifiers and references, large
+                    monetary amounts and precise
+                    interest and exchange rates. If you are a technical architect or
+                    a designer of back-office systems, you should take into account
+                    both the semantics of ISO 20022, which provide an internationally agreed common vocabulary for
+                    financial industry concepts,
+                    and the physical forms in which these concepts are represented.
+                    In this way, you can guarantee that systems will be aligned with
+                    ISO 20022 for messaging purposes, but also with the industry’s
+                    collective wisdom regarding the best ways to represent financial
+                    data for present and future needs
+                </p>
+
+                <p>
+                    Any organisation can develop and improve the ISO 20022
+                    catalogue. You don’t need to be affiliated with ISO, but you
+                    are obliged to comply with the rules set out in the ISO
+                    20022 standard. The standard describes the method to develop
+                    the standards as well as the process to get them approved and
+                    published as part of the official portfolio of ISO 20022 publications. Twenty-five organisations
+                    have already embarked on
+                    developing ISO 20022 definitions.
+                    A series of bodies have been created to monitor the use of the
+                    standard and to help organisations develop successful and compliant messages.
+                </p>
+                <br> <br> <br>
+                <p>
+                    Approval of your business justification gives you the green light
+                    to start developing the messages. Before you start, you will need
+                    to contact the ISO 20022 Registration Authority (RA).
+                    The RA is the guardian of the ISO 20022 repository, which includes
+                    all existing ISO 20022 messages and the dictionary of ISO 20022
+                    components. SWIFT acts as the RA under a contractual agreement
+                    with ISO.
+                    The RA will provide the input and guidelines required to develop
+                    the syntax independent logical message models. For this, you will
+                    reuse existing ISO 20022 message components or ask the RA to
+                    create new components, if necessary.
+                    You will need a modelling tool to design the message models.
+                    SWIFT can provide you with a lite version of the Standards Editors
+                    tool, which was developed by SWIFT to use for its own development of ISO 20022 message models and,
+                    in its role of ISO 20022
+                    RA, to verify the compliance of ISO 20022 message models submitted by others.
+                </p>
+                <br> <br> <br>
+                <p>
+                    Approval of your business justification gives you the green light
+                    to start developing the messages. Before you start, you will need
+                    to contact the ISO 20022 Registration Authority (RA).
+                    The RA is the guardian of the ISO 20022 repository, which includes
+                    all existing ISO 20022 messages and the dictionary of ISO 20022
+                    components. SWIFT acts as the RA under a contractual agreement
+                    with ISO.
+                    The RA will provide the input and guidelines required to develop
+                    the syntax independent logical message models. For this, you will
+                    reuse existing ISO 20022 message components or ask the RA to
+                    create new components, if necessary.
+                    You will need a modelling tool to design the message models.
+                    SWIFT can provide you with a lite version of the Standards Editors
+                    tool, which was developed by SWIFT to use for its own development of ISO 20022 message models and,
+                    in its role of ISO 20022
+                    RA, to verify the compliance of ISO 20022 message models submitted by others.
+                </p>
+                <br> <br> <br>
+                <p>
+                    SWIFT’s commitment to ISO 20022 is broad and deep. In 2000,
+                    SWIFT drafted the original ISO 20022 specification as part of the
+                    ISO working group that developed the standard.
+                    In June 2004, SWIFT was appointed Registration Authority (RA)
+                    for the standard – a role that SWIFT continues to fulfil. The RA
+                    is responsible for maintaining and publishing the central repository of ISO 20022 content and
+                    ensuring its integrity. The first
+                    formal edition of the standard was approved and published by ISO
+                    in December of the same year. In its role of RA, SWIFT developed
+                    and continues to support and update ISO 20022 web resources,
+                    including www.iso20022.org and the web query tool shown in
+                </p>
+                <br> <br> <br>
+                <p>
+                    The RMG – the body responsible for the overall supervision of
+                    the registration process – was formed in January 2005. SWIFT
+                    sends delegations representing both the RA and SWIFT to RMG
+                    meetings.
+                    In June 2005, the first two ISO 20022 Standards Evaluation
+                    Groups (SEG) were formed for the business domains of Payments
+                    and Securities. In 2006, two more SEGs were formed for Trade
+                    and Foreign Exchange business, followed in 2008 by a new SEG
+                    for Cards. In 2016, a specific Derivatives SEG was created to work
+                    within the Securities SEG. The role of the SEGs is to review submitted message definitions in terms
+                    of their business content.
+                    SWIFT is represented on all six SEGs.
+                    In addition to the expertise SWIFT contributes to ensure the validity of the business content of
+                    the standard, SWIFT is also active on
+                    the technical front. SWIFT participated actively to the definition
+                    of the second edition of ISO 20022, which was published by ISO
+                    in May 2013.
+                </p>
+                <br> <br> <br>
+                <p>
+                    The RMG – the body responsible for the overall supervision of
+                    the registration process – was formed in January 2005. SWIFT
+                    sends delegations representing both the RA and SWIFT to RMG
+                    meetings.
+                    In June 2005, the first two ISO 20022 Standards Evaluation
+                    Groups (SEG) were formed for the business domains of Payments
+                    and Securities. In 2006, two more SEGs were formed for Trade
+                    and Foreign Exchange business, followed in 2008 by a new SEG
+                    for Cards. In 2016, a specific Derivatives SEG was created to work
+                    within the Securities SEG. The role of the SEGs is to review submitted message definitions in terms
+                    of their business content.
+                    SWIFT is represented on all six SEGs.
+                    In addition to the expertise SWIFT contributes to ensure the validity of the business content of
+                    the standard, SWIFT is also active on
+                    the technical front. SWIFT participated actively to the definition
+                    of the second edition of ISO 20022, which was published by ISO
+                    in May 2013.
+                </p>
+                <br> <br> <br>
+                <p>
+                    The RMG – the body responsible for the overall supervision of
+                    the registration process – was formed in January 2005. SWIFT
+                    sends delegations representing both the RA and SWIFT to RMG
+                    meetings.
+                    In June 2005, the first two ISO 20022 Standards Evaluation
+                    Groups (SEG) were formed for the business domains of Payments
+                    and Securities. In 2006, two more SEGs were formed for Trade
+                    and Foreign Exchange business, followed in 2008 by a new SEG
+                    for Cards. In 2016, a specific Derivatives SEG was created to work
+                    within the Securities SEG. The role of the SEGs is to review submitted message definitions in terms
+                    of their business content.
+                    SWIFT is represented on all six SEGs.
+                    In addition to the expertise SWIFT contributes to ensure the validity of the business content of the
+                    standard, SWIFT is also active on
+                    the technical front. SWIFT participated actively to the definition
+                    of the second edition of ISO 20022, which was published by ISO
+                    in May 2013.
+                </p>
+                <br> <br> <br>
+                <p>
+                    The RMG – the body responsible for the overall supervision of
+                    the registration process – was formed in January 2005. SWIFT
+                    sends delegations representing both the RA and SWIFT to RMG
+                    meetings.
+                    In June 2005, the first two ISO 20022 Standards Evaluation
+                    Groups (SEG) were formed for the business domains of Payments
+                    and Securities. In 2006, two more SEGs were formed for Trade
+                    and Foreign Exchange business, followed in 2008 by a new SEG
+                    for Cards. In 2016, a specific Derivatives SEG was created to work
+                    within the Securities SEG. The role of the SEGs is to review submitted message definitions in terms
+                    of their business content.
+                    SWIFT is represented on all six SEGs.
+                    In addition to the expertise SWIFT contributes to ensure the validity of the business content of
+                    the standard, SWIFT is also active on
+                    the technical front. SWIFT participated actively to the definition
+                    of the second edition of ISO 20022, which was published by ISO
+                    in May 2013.
+                </p>
+
+                <p>
+                    Translation and mapping rules
+                    For some key areas such as high-value payments, SWIFT has
+                    developed mapping rules between SWIFT’s existing and widelyused MT messages and ISO 20022 messages.
+                    These were developed with key members of the SWIFT community and are made
+                    available to members and partners on MyStandards.
+                </p>
+                <br> <br> <br>
+                <p>
+                    As usage of ISO 20022 messaging has increased over the last few
+                    years, it has become increasingly important to develop a consistent approach for implementation of
+                    ISO 20022 solutions. Consistency is required both in the way that message standards are used
+                    and how releases are managed.
+                </p>
+                <br> <br> <br>
+                <p>
+                    As usage of ISO 20022 messaging has increased over the last few
+                    years, it has become increasingly important to develop a consistent approach for implementation of
+                    ISO 20022 solutions. Consistency is required both in the way that message standards are used
+                    and how releases are managed.
+                </p>
+                <br> <br> <br>
+                <p>
+                    The ISO 20022 message models and dictionary that are the source
+                    for ISO 20022 content can be downloaded from www.iso20022.
+                    org, as well as the message schemas and documentation. In addition, SWIFT can provide a number of
+                    useful representations of the
+                    ISO 20022 content, which can be used to accelerate the development of things like input screens and
+                    user documentation
+                </p>
+
+            </h2>
+        </article>
+    </div>
+</body>
+
+</html>
